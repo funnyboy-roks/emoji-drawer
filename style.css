@@ -1,0 +1,6 @@
+@import 'node_modules/bulma/css/bulma.min.css';
+
+#filter-area{
+    border-bottom: 2px solid black;
+}
+
