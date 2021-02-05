@@ -7,7 +7,7 @@
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
   <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
   <link rel="stylesheet" href="style.css">
-  <title>Hello World!</title>
+  <title>Emoji Drawer</title>
 </head>
 
 <body>
@@ -16,17 +16,22 @@
   </div>
   <br>
   <div class="is-flex is-justify-content-center is-align-content-center pb-6" id="filter-area">
-    <label for="filter" class="mr-4">Emoji Filter: </label>
+    <label for="filter" class="mr-4">Filter: </label>
     <input type="text" id="filter">
   </div>
 
-  <div id="emojis">
+  <div id="emojis" class="is-flex is-flex-wrap-wrap is-justify-content-center is-align-content-center">
 
+  </div>
+
+  <div id="emoji-info" class="p-3">
+    <span id="icon"></span>
+    <span id="names"></span>
   </div>
 
   <!-- You can also require other files to run in this process -->
   <script src="./emojis.js"></script>
-  <script src="./renderer.js"></script>
+  <script src="./renderer.js" type="module"></script>
 </body>
 
 </html>

@@ -1,6 +1,65 @@
 @import 'node_modules/bulma/css/bulma.min.css';
 
-#filter-area{
-    border-bottom: 2px solid black;
+* {
+    color: #99aab5;
+    transition: all .2s ease-in-out;
 }
 
+.title {
+	color: #fff;
+}
+
+html {
+    background: #2c2f33;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+#filter-area input{
+    background: #0003;
+    border: none;
+    outline: none;
+}
+
+#filter-area input:hover{
+    background: #0004;
+}
+
+#filter-area input:focus{
+    border-bottom: 2px solid limegreen;
+}
+
+#filter-area {
+	border-bottom: 2px solid black;
+}
+
+.emoji {
+	font-size: 2em;
+	border: 1px solid #23272a;
+	border-radius: 0.2em;
+	width: 1.5em;
+}
+
+.emoji:hover {
+	background: #0004;
+}
+
+#emoji-info {
+	position: fixed;
+	bottom: 0;
+	background: #0003;
+	width: 100%;
+	font-size: 1.2em;
+    text-align: center;
+    border-top: 2px solid limegreen;
+}
+
+#emoji-info #icon {
+	font-size: 2em;
+	vertical-align: middle;
+}
+#emoji-info #names {
+	vertical-align: middle;
+}
